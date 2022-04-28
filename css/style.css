@@ -1,0 +1,128 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    min-width: 100vw; /*100% видимой ширины экрана*/
+    min-height: 100vh; /*100% от видимой высоты экрана*/
+
+    /*располагаем карточку посреди экрана*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #E5E5E5;
+}
+.card1, .card2{
+    /* используем абсолютные размеры, когда будет галерея товаров, то будут - относительные*/
+    width: 370px;
+    height: 502px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.09);
+    border-radius: 5px;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 30px;
+    position: relative; /*так как будем всё позиционировать относительно карточки*/
+}
+.card3{
+    width: 370px;
+    height: 502px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.09);
+    border-radius: 5px;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 30px;
+    position: relative; 
+}
+
+.discont, .discont1{  /* скидка - красный прямоугольник */
+    position: absolute;
+    top: 18px;
+    left: 0px;
+    background: #CE3535;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding: 9px 14px 7px 26px;
+}
+.discont1{
+    background: #222222;
+}
+.card-image{
+    width: 100%;
+    object-fit: cover; /*изображение обрезается, чтобы полностью поместиться внутри контейнера,
+                             выравнивается по центру с сохранением пропорций */
+    vertical-align: middle;
+}
+.card-title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 165.9%;
+    color: #222222;
+    text-decoration: none;
+    margin-top: 40px;
+    width: 100%;
+}
+.card-title:hover{
+    text-decoration: underline;
+}
+.sale{
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration-line: line-through;
+    color: #5A5A5A;
+    margin: 20px 0 10px;
+    min-height: 24px;
+}
+.prise, .prise3{
+    font-weight: 900;
+    font-size: 24px;
+    color: #CE3535;
+}
+.prise3{
+    margin-top: 54px;
+}
+.card-prise{
+    width: 100%;
+    text-align: right;
+    padding-bottom: 30px;
+}
+.card-btn{
+    background: #E20000;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 12px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        
+}
+.card-btn:hover{
+    text-decoration: underline;
+}
+.basket{
+    margin-right: 10px;
+}
+.main-container{
+    display: flex;
+    justify-content: center;
+    
+}
